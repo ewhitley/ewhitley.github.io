@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CDAKEntry Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CDAKEntry" class="dashAnchor"></a>
+    <a title="CDAKEntry Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CDAKit Docs</a> (81% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CDAKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CDAKEntry Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKAddress.html">CDAKAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKAllergy.html">CDAKAllergy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKCDAIdentifier.html">CDAKCDAIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKCareGoal.html">CDAKCareGoal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKCodeSystemHelper.html">CDAKCodeSystemHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKCodedResultValue.html">CDAKCodedResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKCommunication.html">CDAKCommunication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKCondition.html">CDAKCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKEncounter.html">CDAKEncounter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKEntry.html">CDAKEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKExport.html">CDAKExport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKFacility.html">CDAKFacility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKFamilyHistory.html">CDAKFamilyHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKFulfillmentHistory.html">CDAKFulfillmentHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKFunctionalStatus.html">CDAKFunctionalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKGlobals.html">CDAKGlobals</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKGuarantor.html">CDAKGuarantor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKHKRecord.html">CDAKHKRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKHL7Helper.html">CDAKHL7Helper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKHealthKitBridge.html">CDAKHealthKitBridge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKImmunization.html">CDAKImmunization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKInsuranceProvider.html">CDAKInsuranceProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKLabResult.html">CDAKLabResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKMedicalEquipment.html">CDAKMedicalEquipment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKMedication.html">CDAKMedication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKOrderInformation.html">CDAKOrderInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKOrganization.html">CDAKOrganization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKPerson.html">CDAKPerson</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKPhysicalQuantityResultValue.html">CDAKPhysicalQuantityResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKProcedure.html">CDAKProcedure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKProvider.html">CDAKProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKProviderPerformance.html">CDAKProviderPerformance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C6CDAKit22CDAKProviderPreference">CDAKProviderPreference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKQRDAAuthor.html">CDAKQRDAAuthor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKQRDACustodian.html">CDAKQRDACustodian</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKQRDADevice.html">CDAKQRDADevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKQRDAHeader.html">CDAKQRDAHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKQRDALegalAuthenticator.html">CDAKQRDALegalAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKReason.html">CDAKReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKRecord.html">CDAKRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKReference.html">CDAKReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKResultValue.html">CDAKResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C6CDAKit17CDAKSocialHistory">CDAKSocialHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKSupport.html">CDAKSupport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKTelecom.html">CDAKTelecom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKTransfer.html">CDAKTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKTreatingProvider.html">CDAKTreatingProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDAKVitalSign.html">CDAKVitalSign</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CDAKConfidentialityCodes.html">CDAKConfidentialityCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CDAKHKMetadataKeys.html">CDAKHKMetadataKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CDAKImportError.html">CDAKImportError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF6CDAKitoi2eeFTCS_17CDAKCDAIdentifierS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF6CDAKitoi2eeFTCS_16CDAKOrganizationS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF6CDAKitoi2eeFTCS_12CDAKProviderS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF6CDAKitoi2eeFTCS_31CDAKPhysicalQuantityResultValueS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF6CDAKitoi2eeFTVS_14CDAKCodedEntryS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF6CDAKitoi2eeFTVS_16CDAKCodedEntriesS0__Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CDAKJSONExportable.html">CDAKJSONExportable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CDAKThingWithCodes.html">CDAKThingWithCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CDAKThingWithTimes.html">CDAKThingWithTimes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CDAKCodedEntries.html">CDAKCodedEntries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CDAKCodedEntry.html">CDAKCodedEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CDAKConceptHelpers.html">CDAKConceptHelpers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CDAKMedicationAdministrationTiming.html">CDAKMedicationAdministrationTiming</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CDAKMedicationRestriction.html">CDAKMedicationRestriction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CDAKValueAndUnit.html">CDAKValueAndUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CDAKVocabularyKeys.html">CDAKVocabularyKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:V6CDAKit13code_and_name">code_and_name</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CDAKEntry</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CDAKEntry</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">,</span> <span class="kt">CDAKThingWithCodes</span><span class="p">,</span> <span class="kt">CDAKPropertyAddressable</span><span class="p">,</span> <span class="kt">CDAKThingWithTimes</span><span class="p">,</span> <span class="kt">CDAKJSONInstantiable</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CDA%20properties"></a>
+                <a name="//apple_ref/swift/Section/CDA properties" class="dashAnchor"></a>
+                <a href="#/CDA%20properties">
+                  <h3 class="section-name">CDA properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry5codesVS_16CDAKCodedEntries"></a>
+                    <a name="//apple_ref/swift/Property/codes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry5codesVS_16CDAKCodedEntries">codes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Core coded entries that represent any <q>meaning</q> behind the entry
+These will be in the format of&hellip;
+  ClinicalVocabulary:ConceptID
+Like
+  LOINC:12345</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">codes</span><span class="p">:</span> <span class="kt">CDAKCodedEntries</span> <span class="o">=</span> <span class="kt">CDAKCodedEntries</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry14cda_identifierGSqCS_17CDAKCDAIdentifier_"></a>
+                    <a name="//apple_ref/swift/Property/cda_identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry14cda_identifierGSqCS_17CDAKCDAIdentifier_">cda_identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type of CDA Entry if available</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cda_identifier</span><span class="p">:</span> <span class="kt">CDAKCDAIdentifier</span><span class="p">?</span> <span class="c1">//, class_name: "CDAKCDAIdentifier", as: :cda_identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry6valuesGSaCS_15CDAKResultValue_"></a>
+                    <a name="//apple_ref/swift/Property/values" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry6valuesGSaCS_15CDAKResultValue_">values</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Any associated result values. </p>
+
+<p>Specific entries may contain <q>result,</q> often in the form of a physical quantity result value, etc.</p>
+
+<p>EX: Result of <q>Weight</q> is 160 lbs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">values</span> <span class="o">=</span> <span class="p">[</span><span class="kt">CDAKResultValue</span><span class="p">]()</span> <span class="c1">//, class_name: "ResultValue"... and yet... it wants PhysicalQuantityResultValue - but in other places... ResultValue (PhysicalQuantityResultValue is a subclass of ResultValue)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry10referencesGSaCS_13CDAKReference_"></a>
+                    <a name="//apple_ref/swift/Property/references" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry10referencesGSaCS_13CDAKReference_">references</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA Reference</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">references</span> <span class="o">=</span> <span class="p">[</span><span class="kt">CDAKReference</span><span class="p">]()</span> <span class="c1">//</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry19provider_preferenceGSaS0__"></a>
+                    <a name="//apple_ref/swift/Property/provider_preference" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry19provider_preferenceGSaS0__">provider_preference</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA Provider preference</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">provider_preference</span> <span class="o">=</span> <span class="p">[</span><span class="kt">CDAKEntry</span><span class="p">]()</span> <span class="c1">//, class_name: "CDAKEntry"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry18patient_preferenceGSaS0__"></a>
+                    <a name="//apple_ref/swift/Property/patient_preference" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry18patient_preferenceGSaS0__">patient_preference</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA patient preference</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">patient_preference</span> <span class="o">=</span> <span class="p">[</span><span class="kt">CDAKEntry</span><span class="p">]()</span> <span class="c1">//, class_name: "CDAKEntry"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry16item_descriptionGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/item_description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry16item_descriptionGSqSS_">item_description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA Description</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">item_description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry9specificsGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/specifics" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry9specificsGSqSS_">specifics</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA specifics</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">specifics</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry4timeGSqSd_"></a>
+                    <a name="//apple_ref/swift/Property/time" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry4timeGSqSd_">time</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A generalized <q>time</q> associated with the entry</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry10start_timeGSqSd_"></a>
+                    <a name="//apple_ref/swift/Property/start_time" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry10start_timeGSqSd_">start_time</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A start time associated with this entry</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">start_time</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry8end_timeGSqSd_"></a>
+                    <a name="//apple_ref/swift/Property/end_time" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry8end_timeGSqSd_">end_time</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>an end time associated with this entry</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">end_time</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry11status_codeVS_16CDAKCodedEntries"></a>
+                    <a name="//apple_ref/swift/Property/status_code" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry11status_codeVS_16CDAKCodedEntries">status_code</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA status code</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status_code</span> <span class="p">:</span> <span class="kt">CDAKCodedEntries</span> <span class="o">=</span> <span class="kt">CDAKCodedEntries</span><span class="p">()</span> <span class="c1">//, type: Hash</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry9mood_codeSS"></a>
+                    <a name="//apple_ref/swift/Property/mood_code" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry9mood_codeSS">mood_code</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA moodCode.  Defaulted to <q>EVN</q>
+<a href="http://www.cdapro.com/know/25027">Reference</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mood_code</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"EVN"</span> <span class="c1">//, type: String, default: "EVN"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry12negation_indGSqSb_"></a>
+                    <a name="//apple_ref/swift/Property/negation_ind" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry12negation_indGSqSb_">negation_ind</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA negation indicator.  Is this a <q>negation</q> of the act?</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">negation_ind</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">false</span> <span class="c1">//, as: :negation_ind, type: Boolean</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry15negation_reasonVS_16CDAKCodedEntries"></a>
+                    <a name="//apple_ref/swift/Property/negation_reason" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry15negation_reasonVS_16CDAKCodedEntries">negation_reason</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA negation reason</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">negation_reason</span> <span class="p">:</span> <span class="kt">CDAKCodedEntries</span> <span class="o">=</span> <span class="kt">CDAKCodedEntries</span><span class="p">()</span><span class="c1">//, as: :negation_reason, type: Hash</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry3oidGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/oid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry3oidGSqSS_">oid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA OID</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">oid</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="c1">//, type: String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry6reasonGSqCS_10CDAKReason_"></a>
+                    <a name="//apple_ref/swift/Property/reason" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry6reasonGSqCS_10CDAKReason_">reason</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA Reason</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">reason</span><span class="p">:</span> <span class="kt">CDAKReason</span><span class="p">?</span><span class="c1">//, type: Hash</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry7commentGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/comment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry7commentGSqSS_">comment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Comments support</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">comment</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="c1">// not in original model, but found in some other CDAKEntry items like pregnancies</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry7versionSi"></a>
+                    <a name="//apple_ref/swift/Property/version" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry7versionSi">version</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Version of entry</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry2idGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry2idGSqSS_">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>id</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry10created_atCSo6NSDate"></a>
+                    <a name="//apple_ref/swift/Property/created_at" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry10created_atCSo6NSDate">created_at</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date of entry creation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">created_at</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry10updated_atCSo6NSDate"></a>
+                    <a name="//apple_ref/swift/Property/updated_at" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry10updated_atCSo6NSDate">updated_at</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date of last entry update</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">updated_at</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Health-Data-Standards%20Functions"></a>
+                <a name="//apple_ref/swift/Section/Health-Data-Standards Functions" class="dashAnchor"></a>
+                <a href="#/Health-Data-Standards%20Functions">
+                  <h3 class="section-name">Health-Data-Standards Functions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry6statusGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry6statusGSqSS_">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA status string</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6CDAKit9CDAKEntry9set_valueFS0_FTGSqP__5unitsGSqSS__T_"></a>
+                    <a name="//apple_ref/swift/Method/set_value(_:units:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6CDAKit9CDAKEntry9set_valueFS0_FTGSqP__5unitsGSqSS__T_">set_value(_:units:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the value for the entry</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set_value</span><span class="p">(</span><span class="nv">scalar</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="nv">units</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scalar</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the value.  Anything we can convert to a String</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>units</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the units of the scalar value</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry10identifierGSqPSs9AnyObject__"></a>
+                    <a name="//apple_ref/swift/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry10identifierGSqPSs9AnyObject__">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns CDA identifier or fixed id if not present</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry20identifier_as_stringSS"></a>
+                    <a name="//apple_ref/swift/Property/identifier_as_string" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry20identifier_as_stringSS">identifier_as_string</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts CDA identifier to string for use</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">identifier_as_string</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Standard%20properties"></a>
+                <a name="//apple_ref/swift/Section/Standard properties" class="dashAnchor"></a>
+                <a href="#/Standard%20properties">
+                  <h3 class="section-name">Standard properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry9hashValueSi"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry9hashValueSi">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Internal object hash value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6CDAKit9CDAKEntrycFMS0_FT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6CDAKit9CDAKEntrycFMS0_FT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CDAKEntry</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">,</span> <span class="kt">CDAKThingWithCodes</span><span class="p">,</span> <span class="kt">CDAKPropertyAddressable</span><span class="p">,</span> <span class="kt">CDAKThingWithTimes</span><span class="p">,</span> <span class="kt">CDAKJSONInstantiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6CDAKit9CDAKEntrycFMS0_FT6recordCS_10CDAKRecord_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(record:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6CDAKit9CDAKEntrycFMS0_FT6recordCS_10CDAKRecord_S0_">init(record:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CDAKEntry</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">,</span> <span class="kt">CDAKThingWithCodes</span><span class="p">,</span> <span class="kt">CDAKPropertyAddressable</span><span class="p">,</span> <span class="kt">CDAKThingWithTimes</span><span class="p">,</span> <span class="kt">CDAKJSONInstantiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6CDAKit9CDAKEntrycFMS0_FT14cda_identifierCS_17CDAKCDAIdentifier_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(cda_identifier:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6CDAKit9CDAKEntrycFMS0_FT14cda_identifierCS_17CDAKCDAIdentifier_S0_">init(cda_identifier:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CDAKEntry</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">,</span> <span class="kt">CDAKThingWithCodes</span><span class="p">,</span> <span class="kt">CDAKPropertyAddressable</span><span class="p">,</span> <span class="kt">CDAKThingWithTimes</span><span class="p">,</span> <span class="kt">CDAKJSONInstantiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6CDAKit9CDAKEntrycFMS0_FT14cda_identifierCS_17CDAKCDAIdentifier5codesVS_16CDAKCodedEntries6valuesGSaCS_31CDAKPhysicalQuantityResultValue__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(cda_identifier:codes:values:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6CDAKit9CDAKEntrycFMS0_FT14cda_identifierCS_17CDAKCDAIdentifier5codesVS_16CDAKCodedEntries6valuesGSaCS_31CDAKPhysicalQuantityResultValue__S0_">init(cda_identifier:codes:values:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CDAKEntry</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">,</span> <span class="kt">CDAKThingWithCodes</span><span class="p">,</span> <span class="kt">CDAKPropertyAddressable</span><span class="p">,</span> <span class="kt">CDAKThingWithTimes</span><span class="p">,</span> <span class="kt">CDAKJSONInstantiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Deprecated%20-%20Do%20not%20use"></a>
+                <a name="//apple_ref/swift/Section/Deprecated - Do not use" class="dashAnchor"></a>
+                <a href="#/Deprecated%20-%20Do%20not%20use">
+                  <h3 class="section-name">Deprecated - Do not use</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6CDAKit9CDAKEntrycFMS0_FT5eventGVSs10DictionarySSGSqP____S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6CDAKit9CDAKEntrycFMS0_FT5eventGVSs10DictionarySSGSqP____S0_">init(event:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Do not use - will be removed. Was used in HDS Ruby.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">?])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Standard%20properties2"></a>
+                <a name="//apple_ref/swift/Section/Standard properties" class="dashAnchor"></a>
+                <a href="#/Standard%20properties2">
+                  <h3 class="section-name">Standard properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry11descriptionSS">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Debugging description</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6CDAKit9CDAKEntry7isEqualFS0_FGSqPSs9AnyObject__Sb"></a>
+                    <a name="//apple_ref/swift/Method/isEqual(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6CDAKit9CDAKEntry7isEqualFS0_FGSqPSs9AnyObject__Sb">isEqual(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CDAKEntry</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">,</span> <span class="kt">CDAKThingWithCodes</span><span class="p">,</span> <span class="kt">CDAKPropertyAddressable</span><span class="p">,</span> <span class="kt">CDAKThingWithTimes</span><span class="p">,</span> <span class="kt">CDAKJSONInstantiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Mustache%20marshalling"></a>
+                <a name="//apple_ref/swift/Section/Mustache marshalling" class="dashAnchor"></a>
+                <a href="#/Mustache%20marshalling">
+                  <h3 class="section-name">Mustache marshalling</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry11mustacheBoxERR"></a>
+                    <a name="//apple_ref/swift/Property/mustacheBox" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry11mustacheBoxERR">mustacheBox</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CDAKEntry</span><span class="p">:</span> <span class="kt">NSObject</span> <span class="p">,</span> <span class="kt">CDAKThingWithCodes</span><span class="p">,</span> <span class="kt">CDAKPropertyAddressable</span><span class="p">,</span> <span class="kt">CDAKThingWithTimes</span><span class="p">,</span> <span class="kt">CDAKJSONInstantiable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/JSON%20Generation"></a>
+                <a name="//apple_ref/swift/Section/JSON Generation" class="dashAnchor"></a>
+                <a href="#/JSON%20Generation">
+                  <h3 class="section-name">JSON Generation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit9CDAKEntry8jsonDictGVSs10DictionarySSPSs9AnyObject__"></a>
+                    <a name="//apple_ref/swift/Property/jsonDict" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit9CDAKEntry8jsonDictGVSs10DictionarySSPSs9AnyObject__">jsonDict</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary for JSON data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">jsonDict</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/ewhitley/CDAKit" target="_blank" rel="external">Eric Whitley</a>. All rights reserved. (Last updated: 2016-02-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

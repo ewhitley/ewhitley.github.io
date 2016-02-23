@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HL7Ethnicity Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/HL7Ethnicity" class="dashAnchor"></a>
+    <a title="HL7Ethnicity Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">CDAKit Docs</a> (81% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">CDAKit Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        HL7Ethnicity Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKAddress.html">CDAKAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKAllergy.html">CDAKAllergy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKCDAIdentifier.html">CDAKCDAIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKCareGoal.html">CDAKCareGoal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKCodeSystemHelper.html">CDAKCodeSystemHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKCodedResultValue.html">CDAKCodedResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKCommunication.html">CDAKCommunication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKCondition.html">CDAKCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKEncounter.html">CDAKEncounter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKEntry.html">CDAKEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKExport.html">CDAKExport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKFacility.html">CDAKFacility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKFamilyHistory.html">CDAKFamilyHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKFulfillmentHistory.html">CDAKFulfillmentHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKFunctionalStatus.html">CDAKFunctionalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKGlobals.html">CDAKGlobals</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKGuarantor.html">CDAKGuarantor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKHKRecord.html">CDAKHKRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKHL7Helper.html">CDAKHL7Helper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKHealthKitBridge.html">CDAKHealthKitBridge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKImmunization.html">CDAKImmunization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKInsuranceProvider.html">CDAKInsuranceProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKLabResult.html">CDAKLabResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKMedicalEquipment.html">CDAKMedicalEquipment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKMedication.html">CDAKMedication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKOrderInformation.html">CDAKOrderInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKOrganization.html">CDAKOrganization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKPerson.html">CDAKPerson</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKPhysicalQuantityResultValue.html">CDAKPhysicalQuantityResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKProcedure.html">CDAKProcedure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKProvider.html">CDAKProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKProviderPerformance.html">CDAKProviderPerformance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes.html#/s:C6CDAKit22CDAKProviderPreference">CDAKProviderPreference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKQRDAAuthor.html">CDAKQRDAAuthor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKQRDACustodian.html">CDAKQRDACustodian</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKQRDADevice.html">CDAKQRDADevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKQRDAHeader.html">CDAKQRDAHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKQRDALegalAuthenticator.html">CDAKQRDALegalAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKReason.html">CDAKReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKRecord.html">CDAKRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKReference.html">CDAKReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKResultValue.html">CDAKResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes.html#/s:C6CDAKit17CDAKSocialHistory">CDAKSocialHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKSupport.html">CDAKSupport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKTelecom.html">CDAKTelecom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKTransfer.html">CDAKTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKTreatingProvider.html">CDAKTreatingProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CDAKVitalSign.html">CDAKVitalSign</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/CDAKConfidentialityCodes.html">CDAKConfidentialityCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/CDAKHKMetadataKeys.html">CDAKHKMetadataKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/CDAKImportError.html">CDAKImportError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Functions.html#/s:ZF6CDAKitoi2eeFTCS_17CDAKCDAIdentifierS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Functions.html#/s:ZF6CDAKitoi2eeFTCS_16CDAKOrganizationS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Functions.html#/s:ZF6CDAKitoi2eeFTCS_12CDAKProviderS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Functions.html#/s:ZF6CDAKitoi2eeFTCS_31CDAKPhysicalQuantityResultValueS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Functions.html#/s:ZF6CDAKitoi2eeFTVS_14CDAKCodedEntryS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Functions.html#/s:ZF6CDAKitoi2eeFTVS_16CDAKCodedEntriesS0__Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/CDAKJSONExportable.html">CDAKJSONExportable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/CDAKThingWithCodes.html">CDAKThingWithCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/CDAKThingWithTimes.html">CDAKThingWithTimes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Structs/CDAKCodedEntries.html">CDAKCodedEntries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/CDAKCodedEntry.html">CDAKCodedEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/CDAKConceptHelpers.html">CDAKConceptHelpers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/CDAKMedicationAdministrationTiming.html">CDAKMedicationAdministrationTiming</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/CDAKMedicationRestriction.html">CDAKMedicationRestriction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/CDAKValueAndUnit.html">CDAKValueAndUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/CDAKVocabularyKeys.html">CDAKVocabularyKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs.html#/s:V6CDAKit13code_and_name">code_and_name</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HL7Ethnicity</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HL7Ethnicity</span></code></pre>
+
+                </div>
+              </div>
+            <p><q>In the United States, federal standards for classifying data on ethnicity determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define ethnicity, and they recognize the absence of an anthropological or scientific basis for ethnicity classification. Instead, the federal standards acknowledge that ethnicity is a social-political construct in which an individual&rsquo;s own identification with a particular ethnicity is preferred to observer identification. The standards specify two minimum ethnicity categories: Hispanic or Latino, and Not Hispanic or Latino. The standards define a Hispanic or Latino as a person of</q>Mexican, Puerto Rican, Cuban, South or Central America, or other Spanish culture or origin, regardless of race.<q>The standards stipulate that ethnicity data need not be limited to the two minimum categories, but any expansion must be collapsible to those categories. In addition, the standards stipulate that an individual can be Hispanic or Latino or can be Not Hispanic or Latino, but cannot be both.</q>
+<a href="https://www.hl7.org/fhir/v3/Ethnicity/index.html">Reference</a></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity16HispanicOrLatinoSS"></a>
+                    <a name="//apple_ref/swift/Variable/HispanicOrLatino" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity16HispanicOrLatinoSS">HispanicOrLatino</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hispanic or Latino - Hispanic or Latino</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">HispanicOrLatino</span> <span class="o">=</span> <span class="s">"2135-2"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8SpaniardSS"></a>
+                    <a name="//apple_ref/swift/Variable/Spaniard" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8SpaniardSS">Spaniard</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Spaniard - Spaniard</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Spaniard</span> <span class="o">=</span> <span class="s">"2137-8"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10AndalusianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Andalusian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10AndalusianSS">Andalusian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Andalusian - Andalusian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Andalusian</span> <span class="o">=</span> <span class="s">"2138-6"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8AsturianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Asturian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8AsturianSS">Asturian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Asturian - Asturian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Asturian</span> <span class="o">=</span> <span class="s">"2139-4"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10CastillianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Castillian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10CastillianSS">Castillian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Castillian - Castillian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Castillian</span> <span class="o">=</span> <span class="s">"2140-2"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10CatalonianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Catalonian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10CatalonianSS">Catalonian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Catalonian - Catalonian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Catalonian</span> <span class="o">=</span> <span class="s">"2141-0"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity16BelearicIslanderSS"></a>
+                    <a name="//apple_ref/swift/Variable/BelearicIslander" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity16BelearicIslanderSS">BelearicIslander</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Belearic Islander - Belearic Islander</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">BelearicIslander</span> <span class="o">=</span> <span class="s">"2142-8"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7GallegoSS"></a>
+                    <a name="//apple_ref/swift/Variable/Gallego" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7GallegoSS">Gallego</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gallego - Gallego</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Gallego</span> <span class="o">=</span> <span class="s">"2143-6"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9ValencianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Valencian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9ValencianSS">Valencian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Valencian - Valencian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Valencian</span> <span class="o">=</span> <span class="s">"2144-4"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8CanarianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Canarian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8CanarianSS">Canarian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Canarian - Canarian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Canarian</span> <span class="o">=</span> <span class="s">"2145-1"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity13SpanishBasqueSS"></a>
+                    <a name="//apple_ref/swift/Variable/SpanishBasque" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity13SpanishBasqueSS">SpanishBasque</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Spanish Basque - Spanish Basque</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">SpanishBasque</span> <span class="o">=</span> <span class="s">"2146-9"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7MexicanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Mexican" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7MexicanSS">Mexican</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mexican - Mexican</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Mexican</span> <span class="o">=</span> <span class="s">"2148-5"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity15MexicanAmericanSS"></a>
+                    <a name="//apple_ref/swift/Variable/MexicanAmerican" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity15MexicanAmericanSS">MexicanAmerican</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mexican American - Mexican American</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">MexicanAmerican</span> <span class="o">=</span> <span class="s">"2149-3"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8MexicanoSS"></a>
+                    <a name="//apple_ref/swift/Variable/Mexicano" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8MexicanoSS">Mexicano</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mexicano - Mexicano</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Mexicano</span> <span class="o">=</span> <span class="s">"2150-1"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7ChicanoSS"></a>
+                    <a name="//apple_ref/swift/Variable/Chicano" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7ChicanoSS">Chicano</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Chicano - Chicano</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Chicano</span> <span class="o">=</span> <span class="s">"2151-9"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity6LaRazaSS"></a>
+                    <a name="//apple_ref/swift/Variable/LaRaza" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity6LaRazaSS">LaRaza</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>La Raza - La Raza</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">LaRaza</span> <span class="o">=</span> <span class="s">"2152-7"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity21MexicanAmericanIndianSS"></a>
+                    <a name="//apple_ref/swift/Variable/MexicanAmericanIndian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity21MexicanAmericanIndianSS">MexicanAmericanIndian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mexican American Indian - Mexican American Indian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">MexicanAmericanIndian</span> <span class="o">=</span> <span class="s">"2153-5"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity15CentralAmericanSS"></a>
+                    <a name="//apple_ref/swift/Variable/CentralAmerican" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity15CentralAmericanSS">CentralAmerican</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Central American - Central American</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">CentralAmerican</span> <span class="o">=</span> <span class="s">"2155-0"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10CostaRicanSS"></a>
+                    <a name="//apple_ref/swift/Variable/CostaRican" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10CostaRicanSS">CostaRican</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Costa Rican - Costa Rican</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">CostaRican</span> <span class="o">=</span> <span class="s">"2156-8"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10GuatemalanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Guatemalan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10GuatemalanSS">Guatemalan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guatemalan - Guatemalan</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Guatemalan</span> <span class="o">=</span> <span class="s">"2157-6"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8HonduranSS"></a>
+                    <a name="//apple_ref/swift/Variable/Honduran" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8HonduranSS">Honduran</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Honduran - Honduran</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Honduran</span> <span class="o">=</span> <span class="s">"2158-4"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10NicaraguanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Nicaraguan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10NicaraguanSS">Nicaraguan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Nicaraguan - Nicaraguan</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Nicaraguan</span> <span class="o">=</span> <span class="s">"2159-2"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10PanamanianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Panamanian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10PanamanianSS">Panamanian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Panamanian - Panamanian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Panamanian</span> <span class="o">=</span> <span class="s">"2160-0"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10SalvadoranSS"></a>
+                    <a name="//apple_ref/swift/Variable/Salvadoran" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10SalvadoranSS">Salvadoran</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Salvadoran - Salvadoran</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Salvadoran</span> <span class="o">=</span> <span class="s">"2161-8"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity21CentralAmericanIndianSS"></a>
+                    <a name="//apple_ref/swift/Variable/CentralAmericanIndian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity21CentralAmericanIndianSS">CentralAmericanIndian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Central American Indian - Central American Indian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">CentralAmericanIndian</span> <span class="o">=</span> <span class="s">"2162-6"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9CanalZoneSS"></a>
+                    <a name="//apple_ref/swift/Variable/CanalZone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9CanalZoneSS">CanalZone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Canal Zone - Canal Zone</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">CanalZone</span> <span class="o">=</span> <span class="s">"2163-4"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity13SouthAmericanSS"></a>
+                    <a name="//apple_ref/swift/Variable/SouthAmerican" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity13SouthAmericanSS">SouthAmerican</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>South American - South American</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">SouthAmerican</span> <span class="o">=</span> <span class="s">"2165-9"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity11ArgentineanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Argentinean" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity11ArgentineanSS">Argentinean</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Argentinean - Argentinean</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Argentinean</span> <span class="o">=</span> <span class="s">"2166-7"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8BolivianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Bolivian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8BolivianSS">Bolivian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bolivian - Bolivian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Bolivian</span> <span class="o">=</span> <span class="s">"2167-5"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7ChileanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Chilean" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7ChileanSS">Chilean</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Chilean - Chilean</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Chilean</span> <span class="o">=</span> <span class="s">"2168-3"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9ColombianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Colombian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9ColombianSS">Colombian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Colombian - Colombian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Colombian</span> <span class="o">=</span> <span class="s">"2169-1"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10EcuadorianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Ecuadorian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10EcuadorianSS">Ecuadorian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ecuadorian - Ecuadorian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Ecuadorian</span> <span class="o">=</span> <span class="s">"2170-9"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10ParaguayanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Paraguayan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10ParaguayanSS">Paraguayan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Paraguayan - Paraguayan</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Paraguayan</span> <span class="o">=</span> <span class="s">"2171-7"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8PeruvianSS"></a>
+                    <a name="//apple_ref/swift/Variable/Peruvian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity8PeruvianSS">Peruvian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Peruvian - Peruvian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Peruvian</span> <span class="o">=</span> <span class="s">"2172-5"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9UruguayanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Uruguayan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9UruguayanSS">Uruguayan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uruguayan - Uruguayan</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Uruguayan</span> <span class="o">=</span> <span class="s">"2173-3"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10VenezuelanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Venezuelan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity10VenezuelanSS">Venezuelan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Venezuelan - Venezuelan</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Venezuelan</span> <span class="o">=</span> <span class="s">"2174-1"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity19SouthAmericanIndianSS"></a>
+                    <a name="//apple_ref/swift/Variable/SouthAmericanIndian" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity19SouthAmericanIndianSS">SouthAmericanIndian</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>South American Indian - South American Indian</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">SouthAmericanIndian</span> <span class="o">=</span> <span class="s">"2175-8"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7CriolloSS"></a>
+                    <a name="//apple_ref/swift/Variable/Criollo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity7CriolloSS">Criollo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Criollo - Criollo</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Criollo</span> <span class="o">=</span> <span class="s">"2176-6"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity13LatinAmericanSS"></a>
+                    <a name="//apple_ref/swift/Variable/LatinAmerican" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity13LatinAmericanSS">LatinAmerican</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Latin American - Latin American</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">LatinAmerican</span> <span class="o">=</span> <span class="s">"2178-2"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity11PuertoRicanSS"></a>
+                    <a name="//apple_ref/swift/Variable/PuertoRican" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity11PuertoRicanSS">PuertoRican</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Puerto Rican - Puerto Rican</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">PuertoRican</span> <span class="o">=</span> <span class="s">"2180-8"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity5CubanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Cuban" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity5CubanSS">Cuban</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cuban - Cuban</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Cuban</span> <span class="o">=</span> <span class="s">"2182-4"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9DominicanSS"></a>
+                    <a name="//apple_ref/swift/Variable/Dominican" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity9DominicanSS">Dominican</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dominican - Dominican</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Dominican</span> <span class="o">=</span> <span class="s">"2184-0"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity19NotHispanicOrLatinoSS"></a>
+                    <a name="//apple_ref/swift/Variable/NotHispanicOrLatino" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVV6CDAKit18CDAKConceptHelpers12HL7Ethnicity19NotHispanicOrLatinoSS">NotHispanicOrLatino</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not Hispanic or Latino - Note that this term remains in the table for completeness, even though within HL7, the notion of <q>not otherwise coded</q> term is deprecated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">NotHispanicOrLatino</span> <span class="o">=</span> <span class="s">"2186-5"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/ewhitley/CDAKit" target="_blank" rel="external">Eric Whitley</a>. All rights reserved. (Last updated: 2016-02-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,191 @@
+thing_with_times.swift
+	public protocol CDAKThingWithTimes: class
+	var time: Double? { get set }
+	var start_time: Double? { get set }
+	var end_time: Double? { get set }
+CDAKJSONExportable.swift
+	public protocol CDAKJSONExportable
+	var json: String {get}
+	var jsonDict: [String :AnyObject] {get}
+	public protocol CDAKJSONExportable
+	public var json: String
+cda_identifier.swift
+	public var hashValue: Int
+	public init(root: String? = nil, extension_id: String? = nil)
+	public func == (lhs: CDAKCDAIdentifier, rhs: CDAKCDAIdentifier) -> Bool
+	public var mustacheBox: MustacheBox
+CDAKQRDAAuthor.swift
+	public class CDAKQRDAAuthor
+	public var time = NSDate()
+	public var ids: [CDAKCDAIdentifier] = []
+	public var addresses: [CDAKAddress] = []
+	public var telecoms: [CDAKTelecom] = []
+	public var person: CDAKPerson?
+	public var device: CDAKQRDADevice?
+	public var organization: CDAKOrganization?
+	public class CDAKQRDAAuthor
+	public var description: String
+	public class CDAKQRDAAuthor
+	public var mustacheBox: MustacheBox
+	public class CDAKQRDAAuthor
+	public var jsonDict: [String: AnyObject]
+condition.swift
+	override public var boxedValues: [String:MustacheBox]
+organization.swift
+	public init()
+	public var hashValue: Int
+	public func == (lhs: CDAKOrganization, rhs: CDAKOrganization) -> Bool
+	public var mustacheBox: MustacheBox
+provider.swift
+	public init()
+	public func == (lhs: CDAKProvider, rhs: CDAKProvider) -> Bool
+	public var mustacheBox: MustacheBox
+transfer.swift
+	public var mustacheBox: MustacheBox
+telecom.swift
+	public override init()
+	public init(use: String?, value: String, preferred: Bool? = false)
+	override public var mustacheBox: MustacheBox
+reference.swift
+	public init(entry: CDAKEntry)
+	public init(type: String?, referenced_type: String, referenced_id: String?, entry: CDAKEntry? = nil )
+entry.swift
+	public override required init()
+	public init(record: CDAKRecord)
+	public init(cda_identifier: CDAKCDAIdentifier)
+	public init(cda_identifier: CDAKCDAIdentifier, codes: CDAKCodedEntries, values: [CDAKPhysicalQuantityResultValue])
+	override public func isEqual(object: AnyObject?) -> Bool
+	override public var mustacheBox: MustacheBox
+bulk_record_importer.swift
+	public enum CDAKImportError : ErrorType
+	case NotImplemented
+	case UnableToDetermineFormat
+	case NoClinicalDocumentElement
+	case InvalidXML
+person.swift
+	public init(title: String? = nil, given_name: String? = nil, family_name: String? = nil, addresses: [CDAKAddress] = [], telecoms: [CDAKTelecom] = [])
+	public var mustacheBox: MustacheBox
+CDAKQRDAHeader.swift
+	public class CDAKQRDAHeader
+	public var identifier: CDAKCDAIdentifier?
+	public var authors: [CDAKQRDAAuthor] = []
+	public var custodian: CDAKQRDACustodian?
+	public var legal_authenticator: CDAKQRDALegalAuthenticator?
+	public var performers: [CDAKProvider] = []
+	public var time = NSDate()
+	public var confidentiality: CDAKConfidentialityCodes = .Normal
+	public var title: String?
+	public class CDAKQRDAHeader
+	public var description: String
+	public class CDAKQRDAHeader
+	public var mustacheBox: MustacheBox
+	public class CDAKQRDAHeader
+	public var jsonDict: [String: AnyObject]
+CDAKQRDADevice.swift
+	public class CDAKQRDADevice
+	public var name: String?
+	public var model: String?
+	public class CDAKQRDADevice
+	public var description: String
+	public class CDAKQRDADevice
+	public var mustacheBox: MustacheBox
+	public class CDAKQRDADevice
+	public var jsonDict: [String: AnyObject]
+CDAKValueAndUnit.swift
+	public struct CDAKValueAndUnit
+	public struct CDAKValueAndUnit
+	public var jsonDict: [String: AnyObject]
+HDSExport.swift
+	case ccda  = "ccda"
+	case c32 = "c32"
+CDAKQRDALegalAuthenticator.swift
+	public class CDAKQRDALegalAuthenticator
+	public var time = NSDate()
+	public var telecoms: [CDAKTelecom] = []
+	public var ids: [CDAKCDAIdentifier] = []
+	public var addresses: [CDAKAddress] = []
+	public var person: CDAKPerson?
+	public var organization: CDAKOrganization?
+	public class CDAKQRDALegalAuthenticator
+	public var description: String
+	public class CDAKQRDALegalAuthenticator
+	public var mustacheBox: MustacheBox
+	public class CDAKQRDALegalAuthenticator
+	public var jsonDict: [String: AnyObject]
+CDAKQRDACustodian.swift
+	public class CDAKQRDACustodian
+	public var ids: [CDAKCDAIdentifier] = []
+	public var person: CDAKPerson? //I see no cases where this is used in CDA
+	public var organization: CDAKOrganization?
+	public class CDAKQRDACustodian
+	public var description: String
+	public class CDAKQRDACustodian
+	public var mustacheBox: MustacheBox
+	public class CDAKQRDACustodian
+	public var jsonDict: [String: AnyObject]
+physical_quantity_result_value.swift
+	public init(scalar: Any?, units: String? = nil)
+	public func == (lhs: CDAKPhysicalQuantityResultValue, rhs: CDAKPhysicalQuantityResultValue) -> Bool
+	override public var mustacheBox: MustacheBox
+allergy.swift
+	public init(type:CDAKCodedEntries, reaction: CDAKCodedEntries = CDAKCodedEntries(), severity: CDAKCodedEntries = CDAKCodedEntries())
+	public required init()
+CDAKConfidentialityCodes.swift
+	public enum CDAKConfidentialityCodes: String
+	case  Unrestricted = "U",
+	Low = "L",
+	Moderate = "M",
+	Normal = "N",
+	Restricted = "R",
+	VeryRestricted = "V"
+record.swift
+	public struct code_and_name
+	required override public init() { // <== Need "required" because we need to call dynamicType() below
+	public func copyWithZone(zone: NSZone) -> AnyObject { // <== NSCopying
+	override public var mustacheBox: MustacheBox
+	public convenience init(copyFrom record: CDAKRecord)
+medication.swift
+	public var jsonDict: [String: AnyObject]
+CDAKitHealthKitBridge.swift
+	case HKQuantityTypeIdentifierBodyMassIndex
+	case HKQuantityTypeIdentifierBodyFatPercentage
+	case HKQuantityTypeIdentifierHeight
+	case HKQuantityTypeIdentifierBodyMass
+	case HKQuantityTypeIdentifierLeanBodyMass
+	case HKQuantityTypeIdentifierStepCount
+	case HKQuantityTypeIdentifierDistanceWalkingRunning
+	case HKQuantityTypeIdentifierDistanceCycling
+	case HKQuantityTypeIdentifierBasalEnergyBurned
+	case HKQuantityTypeIdentifierActiveEnergyBurned
+	case HKQuantityTypeIdentifierFlightsClimbed
+	case HKQuantityTypeIdentifierNikeFuel
+	case HKQuantityTypeIdentifierHeartRate
+	case HKQuantityTypeIdentifierBodyTemperature
+	case HKQuantityTypeIdentifierBasalBodyTemperature
+	case HKQuantityTypeIdentifierBloodPressureSystolic
+	case HKQuantityTypeIdentifierBloodPressureDiastolic
+	case HKQuantityTypeIdentifierRespiratoryRate
+	case HKQuantityTypeIdentifierOxygenSaturation
+	case HKQuantityTypeIdentifierPeripheralPerfusionIndex
+	case HKQuantityTypeIdentifierBloodGlucose
+	case HKQuantityTypeIdentifierNumberOfTimesFallen
+	case HKQuantityTypeIdentifierElectrodermalActivity
+	case HKQuantityTypeIdentifierInhalerUsage
+	case HKQuantityTypeIdentifierBloodAlcoholContent
+	case HKQuantityTypeIdentifierForcedVitalCapacity
+	case HKQuantityTypeIdentifierForcedExpiratoryVolume1
+	case HKQuantityTypeIdentifierPeakExpiratoryFlowRate
+	public static let allValues = [HKQuantityTypeIdentifierBodyMassIndex, HKQuantityTypeIdentifierBodyFatPercentage, HKQuantityTypeIdentifierHeight, HKQuantityTypeIdentifierBodyMass, HKQuantityTypeIdentifierLeanBodyMass, HKQuantityTypeIdentifierStepCount, HKQuantityTypeIdentifierDistanceWalkingRunning, HKQuantityTypeIdentifierDistanceCycling, HKQuantityTypeIdentifierBasalEnergyBurned, HKQuantityTypeIdentifierActiveEnergyBurned, HKQuantityTypeIdentifierFlightsClimbed, HKQuantityTypeIdentifierNikeFuel, HKQuantityTypeIdentifierHeartRate, HKQuantityTypeIdentifierBodyTemperature, HKQuantityTypeIdentifierBasalBodyTemperature, HKQuantityTypeIdentifierBloodPressureSystolic, HKQuantityTypeIdentifierBloodPressureDiastolic, HKQuantityTypeIdentifierRespiratoryRate  , HKQuantityTypeIdentifierOxygenSaturation, HKQuantityTypeIdentifierPeripheralPerfusionIndex, HKQuantityTypeIdentifierBloodGlucose, HKQuantityTypeIdentifierNumberOfTimesFallen, HKQuantityTypeIdentifierElectrodermalActivity, HKQuantityTypeIdentifierInhalerUsage, HKQuantityTypeIdentifierBloodAlcoholContent, HKQuantityTypeIdentifierForcedVitalCapacity, HKQuantityTypeIdentifierForcedExpiratoryVolume1, HKQuantityTypeIdentifierPeakExpiratoryFlowRate]
+CDAKVocabularyStructs.swift
+	public struct _GeneralAddressUse
+address.swift
+	public override init()
+	public init(street:[String] = [], city: String?, state: String?, zip: String?, country: String?, use: String?)
+CDAKCodedEntries.swift
+	public func == (lhs: CDAKCodedEntry, rhs: CDAKCodedEntry) -> Bool
+	public var mustacheBox: MustacheBox
+	public func generate() -> DictionaryGenerator<String, [CDAKCodedEntry]>
+	public var startIndex: Index {get { return entries.startIndex }}
+	public var endIndex: Index {get { return entries.endIndex }}
+	public func == (lhs: CDAKCodedEntries, rhs: CDAKCodedEntries) -> Bool
+	public var mustacheBox: MustacheBox
