@@ -271,7 +271,7 @@
 
 <ul>
 <li>CDAKit GitHub - <a href="https://github.com/ewhitley/CDAKit">Source</a></li>
-<li>Additional <a href="https://ewhitley.github.io/CDAKit">documentation</a>.</li>
+<li>Additional <a href="https://ewhitley.github.io/CDAKit">documentation</a></li>
 </ul>
 
 <p>CDAKit provides C32 and C-CDA import and export functionality as well as the ability to connect CDA concepts with HealthKit samples.  This allows for bridging between CDA and HealthKit so you can integrate with an Electronic Medical Records system.</p>
@@ -346,7 +346,7 @@
   <span class="c1">//let's create a new vital</span>
   <span class="c1">// use the coded values to govern "meaning" (height, weight, BMI, BP items, etc.)</span>
   <span class="k">let</span> <span class="nv">aVital</span> <span class="o">=</span> <span class="kt">CDAKVitalSign</span><span class="p">()</span>
-  <span class="n">aVital</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="nf">addCodes</span><span class="p">(</span><span class="s">"LOINC"</span><span class="p">,</span> <span class="nv">codes</span><span class="p">:</span> <span class="p">[</span><span class="s">"3141-9"</span><span class="p">])</span> <span class="c1">//weight</span>
+  <span class="n">aVital</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="nf">addCodes</span><span class="p">(</span><span class="s">"LOINC"</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="s">"3141-9"</span><span class="p">)</span> <span class="c1">//weight</span>
   <span class="n">aVital</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">CDAKPhysicalQuantityResultValue</span><span class="p">(</span><span class="nv">scalar</span><span class="p">:</span> <span class="mf">155.0</span><span class="p">,</span> <span class="nv">units</span><span class="p">:</span> <span class="s">"lb"</span><span class="p">))</span>
   <span class="n">aVital</span><span class="o">.</span><span class="n">start_time</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span><span class="o">.</span><span class="n">timeIntervalSince1970</span>
   <span class="n">aVital</span><span class="o">.</span><span class="n">end_time</span> <span class="o">=</span> <span class="kt">NSDate</span><span class="p">()</span><span class="o">.</span><span class="n">timeIntervalSince1970</span>
@@ -432,7 +432,7 @@
 
 <p>Adding coded data to an Entry</p>
 <pre class="highlight swift"><code>  <span class="k">let</span> <span class="nv">aVital</span> <span class="o">=</span> <span class="kt">CDAKVitalSign</span><span class="p">()</span>
-  <span class="n">aVital</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="nf">addCodes</span><span class="p">(</span><span class="s">"LOINC"</span><span class="p">,</span> <span class="nv">codes</span><span class="p">:</span> <span class="p">[</span><span class="s">"3141-9"</span><span class="p">])</span> <span class="c1">//weight</span>
+  <span class="n">aVital</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="nf">addCodes</span><span class="p">(</span><span class="s">"LOINC"</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="s">"3141-9"</span><span class="p">)</span> <span class="c1">//weight</span>
 </code></pre>
 
 <p>The vocabulary keys are flexible, but there are some fixed keys to help ensure concepts that have <q>preferred</q> vocabularies are able to resolve the choice of preferred vs. translation entries.</p>
@@ -441,14 +441,14 @@
 
 <p>You could then use these constants as follows:</p>
 <pre class="highlight swift"><code>      <span class="k">let</span> <span class="nv">aVital</span> <span class="o">=</span> <span class="kt">CDAKVitalSign</span><span class="p">()</span>
-      <span class="n">aVital</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="nf">addCodes</span><span class="p">(</span><span class="kt">CDAKVocabularyKeys</span><span class="o">.</span><span class="kt">LOINC</span><span class="p">,</span> <span class="nv">codes</span><span class="p">:</span> <span class="p">[</span><span class="s">"3141-9"</span><span class="p">])</span> <span class="c1">//weight</span>
+      <span class="n">aVital</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="nf">addCodes</span><span class="p">(</span><span class="kt">CDAKVocabularyKeys</span><span class="o">.</span><span class="kt">LOINC</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="s">"3141-9"</span><span class="p">)</span> <span class="c1">//weight</span>
 </code></pre>
 
 <p>This is probably preferred just to ensure consistency and ensure any associated OID lookups succeed.</p>
 
 <p>You can also supply an optional descriptive <code>displayName</code> which would appear in the finalized coded results.</p>
 <pre class="highlight swift"><code>      <span class="k">let</span> <span class="nv">aVital</span> <span class="o">=</span> <span class="kt">CDAKVitalSign</span><span class="p">()</span>
-      <span class="n">aVital</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="nf">addCodes</span><span class="p">(</span><span class="kt">CDAKVocabularyKeys</span><span class="o">.</span><span class="kt">LOINC</span><span class="p">,</span> <span class="nv">codes</span><span class="p">:</span> <span class="p">[</span><span class="s">"3141-9"</span><span class="p">],</span> <span class="nv">displayName</span><span class="p">:</span> <span class="s">"Body Weight"</span><span class="p">)</span> <span class="c1">//weight</span>
+      <span class="n">aVital</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="nf">addCodes</span><span class="p">(</span><span class="kt">CDAKVocabularyKeys</span><span class="o">.</span><span class="kt">LOINC</span><span class="p">,</span> <span class="nv">code</span><span class="p">:</span> <span class="s">"3141-9"</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="s">"Body Weight"</span><span class="p">)</span> <span class="c1">//weight</span>
 </code></pre>
 <a href='#a_name_basic_methods_a_basic_methods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='a_name_basic_methods_a_basic_methods'><a name="basic_methods"></a>Basic Methods</h1>
 <a href='#a_name_import_cda_xml_a_importing_from_cda_xml' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='a_name_import_cda_xml_a_importing_from_cda_xml'><a name="import_cda_xml"></a>Importing from CDA XML</h2>
@@ -722,7 +722,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/ewhitley/CDAKit" target="_blank" rel="external">Eric Whitley</a>. All rights reserved. (Last updated: 2016-02-23)</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/ewhitley/CDAKit" target="_blank" rel="external">Eric Whitley</a>. All rights reserved. (Last updated: 2016-02-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
