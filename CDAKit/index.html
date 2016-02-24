@@ -455,7 +455,7 @@
 
 <p>Import your CDA XML from wherever it might be.  If you need some sample CDA files, Bostron Children&rsquo;s Hospital has set up <a href="https://github.com/chb/sample_ccdas/blob/master/HL7%20Samples/CCD.sample.xml">a great repository</a>.</p>
 
-<p>Once you have your XML, you can <code>try</code> to creae a <code>CDAKRecord</code> from it by parsing the <code>String</code>.  The XML is expected to be a well-formed XML document with a <code>ClinicalDocument</code> root element.</p>
+<p>Once you have your XML, you can <code>try</code> to create a <code>CDAKRecord</code> from it by parsing the <code>String</code>.  The XML is expected to be a well-formed XML document with a <code>ClinicalDocument</code> root element.</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">myXML</span><span class="p">:</span><span class="kt">String</span> <span class="o">=</span> <span class="p">((</span><span class="kt">Get</span> <span class="n">some</span> <span class="kt">CDA</span> <span class="kt">XML</span><span class="p">))</span>
 <span class="k">do</span> <span class="p">{</span>
   <span class="c1">//try to import some CDA XML</span>
@@ -616,7 +616,7 @@
 </code></pre>
 <a href='#a_name_healthkit_vocabs_and_units_a_vocabulary_and_unit_mappings' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='a_name_healthkit_vocabs_and_units_a_vocabulary_and_unit_mappings'><a name="healthkit_vocabs_and_units"></a>Vocabulary and Unit Mappings</h2>
 
-<p>This is the most complex and and <q>personal preference</q> aspect of mapping between HealthKit and CDA.  When, for example, you export a HealthKit glucose <code>HKQuantityTypeIdentifierBloodGlucose</code> sample to CDA, which clinical vocabulary and concept code would you like to use?  Which measurement units would be most appropriate? Likewise, when importing from CDA to HealthKit, how do you infer that <q>LOINC:2345-7</q> is a blood glucose measurement?  And how do you transform the variety of CDA-based UCUM units into Apple&rsquo;s expected <q>mg/dl</q>?</p>
+<p>This is the most complex and <q>personal preference</q> aspect of mapping between HealthKit and CDA.  When, for example, you export a HealthKit glucose <code>HKQuantityTypeIdentifierBloodGlucose</code> sample to CDA, which clinical vocabulary and concept code would you like to use?  Which measurement units would be most appropriate? Likewise, when importing from CDA to HealthKit, how do you infer that <q>LOINC:2345-7</q> is a blood glucose measurement?  And how do you transform the variety of CDA-based UCUM units into Apple&rsquo;s expected <q>mg/dl</q>?</p>
 
 <p>To help, CDAKit provides two key mechanisms:</p>
 
@@ -696,7 +696,7 @@
 </code></pre>
 <a href='#a_name_healthkit_sample_metadata_a_searching_for_healthkit_samples_imported_from_cda' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='a_name_healthkit_sample_metadata_a_searching_for_healthkit_samples_imported_from_cda'><a name="healthkit_sample_metadata"></a>Searching for HealthKit Samples Imported from CDA</h2>
 
-<p>HKQuantitySample created by CDAKit&rsquo;s record import process will include a few custom metadata keys. These are intended to help you identify and manage CDA-based samples (mergine, deletion, etc.).</p>
+<p>HKQuantitySample created by CDAKit&rsquo;s record import process will include a few custom metadata keys. These are intended to help you identify and manage CDA-based samples (merging, deletion, etc.).</p>
 <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CDAKHKMetadataKeys</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
   <span class="k">case</span> <span class="kt">CDAKMetadataRecordIDRoot</span>
   <span class="k">case</span> <span class="kt">CDAKMetadataEntryHash</span>
