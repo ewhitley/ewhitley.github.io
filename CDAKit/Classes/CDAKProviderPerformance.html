@@ -61,6 +61,9 @@
                 <a href="../Classes/CDAKEntry.html">CDAKEntry</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/CDAKEntryDetail.html">CDAKEntryDetail</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/CDAKExport.html">CDAKExport</a>
               </li>
               <li class="nav-group-task">
@@ -223,6 +226,9 @@
                 <a href="../Protocols/CDAKThingWithCodes.html">CDAKThingWithCodes</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/CDAKThingWithIdentifier.html">CDAKThingWithIdentifier</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/CDAKThingWithTimes.html">CDAKThingWithTimes</a>
               </li>
             </ul>
@@ -268,9 +274,7 @@
 
                 </div>
               </div>
-            <p>Performance entry for provider</p>
-
-<p>NOTE: we&rsquo;re never going to use this. It&rsquo;s for QRDA III and we have no measure engine, no measures, etc. so this is never going to be utilized.</p>
+            <p>Supplies a relationship between a patient and a provider for a particulary start/end date and function.</p>
 
           </section>
           <section class="section task-group-section">
@@ -364,6 +368,118 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit23CDAKProviderPerformance12functionCodeGSqVS_14CDAKCodedEntry_"></a>
+                    <a name="//apple_ref/swift/Property/functionCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit23CDAKProviderPerformance12functionCodeGSqVS_14CDAKCodedEntry_">functionCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>CDA function code</p>
+
+<p>This allows us to determine the clinical function like <q>Primary Care Physician</q> if not specifically associated with an entry as a performer.</p>
+
+<pre class="highlight plaintext"><code>&lt;functionCode code="PCP" displayName="Primary Care Physician"
+codeSystem="2.16.840.1.113883.5.88" codeSystemName="participationFunction"&gt;
+&lt;originalText&gt;Primary Care Provider&lt;/originalText&gt;
+&lt;/functionCode&gt;
+</code></pre>
+
+<p>This is a complex element due to history and various use.</p>
+
+<p>You can read more about functionCode at the <a href="http://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=83329000">CDAPro site</a></p>
+
+<p>Historical C32 codes:</p>
+
+<p><hr></p>
+
+<p>Code System: <q>Provider Role</q> <a href="http://ushik.ahrq.gov/ViewItemDetails?system=mdr&amp;itemKey=83329000">2.16.840.1.113883.12.443</a></p>
+
+<ul>
+<li>PP (Primary Care Provider)</li>
+<li>CP (Consulting Provider)</li>
+<li>RP (Referring Provider)</li>
+</ul>
+
+<p><a href='#c_cda_codes' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='c_cda_codes'>C-CDA codes:</h2></p>
+
+<p>Code System: <q>ParticipationFunction</q> <a href="http://www.hl7.org/documentcenter/public_temp_29B6E6E3-1C23-BA17-0C7B234C1C2C5A05/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/ParticipationFunction.html">2.16.840.1.113883.5.88</a></p>
+
+<p>Subset of list:</p>
+
+<ul>
+<li>ADMPHYS (admitting physician)</li>
+<li>ANEST (anesthesist)</li>
+<li>ANRS (anesthesia nurse)</li>
+<li>ATTPHYS (attending physician)</li>
+<li>DISPHYS (discharging physician)</li>
+<li>FASST (first assistant surgeon)</li>
+<li>MDWF (midwife)</li>
+<li>NASST (nurse assistant)</li>
+<li>PCP (primary care physician)</li>
+<li>PRISURG (primary surgeon)</li>
+<li>RNDPHYS (rounding physician)</li>
+<li>SASST (second assistant surgeon)</li>
+<li>SNRS (scrub nurse)</li>
+<li>TASST (third assistant)</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">functionCode</span><span class="p">:</span> <span class="kt">CDAKCodedEntry</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Standard%20properties"></a>
+                <a name="//apple_ref/swift/Section/Standard properties" class="dashAnchor"></a>
+                <a href="#/Standard%20properties">
+                  <h3 class="section-name">Standard properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6CDAKit23CDAKProviderPerformance11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6CDAKit23CDAKProviderPerformance11descriptionSS">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Debugging description</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -407,7 +523,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="https://github.com/ewhitley/CDAKit" target="_blank" rel="external">Eric Whitley</a>. All rights reserved. (Last updated: 2016-02-24)</p>
+          <p>&copy; 2016 <a class="link" href="https://github.com/ewhitley/CDAKit" target="_blank" rel="external">Eric Whitley</a>. All rights reserved. (Last updated: 2016-03-02)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

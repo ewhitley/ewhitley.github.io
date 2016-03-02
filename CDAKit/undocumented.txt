@@ -3,6 +3,11 @@ thing_with_times.swift
 	var time: Double? { get set }
 	var start_time: Double? { get set }
 	var end_time: Double? { get set }
+entry_detail.swift
+	public class CDAKEntryDetail: CDAKThingWithCodes, CDAKThingWithTimes, CDAKThingWithIdentifier, CustomStringConvertible
+	public class CDAKEntryDetail : CDAKThingWithCodes, CDAKThingWithTimes, CDAKThingWithIdentifier, CustomStringConvertible
+	public var mustacheBox: MustacheBox
+	public class CDAKEntryDetail : CDAKThingWithCodes, CDAKThingWithTimes, CDAKThingWithIdentifier, CustomStringConvertible
 CDAKJSONExportable.swift
 	public protocol CDAKJSONExportable
 	var json: String {get}
@@ -63,7 +68,7 @@ bulk_record_importer.swift
 	case NoClinicalDocumentElement
 	case InvalidXML
 person.swift
-	public init(title: String? = nil, given_name: String? = nil, family_name: String? = nil, addresses: [CDAKAddress] = [], telecoms: [CDAKTelecom] = [])
+	public init(prefix: String? = nil, given_name: String? = nil, family_name: String? = nil, suffix: String? = nil, addresses: [CDAKAddress] = [], telecoms: [CDAKTelecom] = [])
 	public var mustacheBox: MustacheBox
 CDAKQRDAHeader.swift
 	public class CDAKQRDAHeader
@@ -93,6 +98,8 @@ CDAKQRDADevice.swift
 	public var jsonDict: [String: AnyObject]
 CDAKValueAndUnit.swift
 	public struct CDAKValueAndUnit
+	public struct CDAKValueAndUnit
+	public var mustacheBox: MustacheBox
 	public struct CDAKValueAndUnit
 	public var jsonDict: [String: AnyObject]
 HDSExport.swift
@@ -128,7 +135,7 @@ physical_quantity_result_value.swift
 	public func == (lhs: CDAKPhysicalQuantityResultValue, rhs: CDAKPhysicalQuantityResultValue) -> Bool
 	override public var mustacheBox: MustacheBox
 allergy.swift
-	public init(type:CDAKCodedEntries, reaction: CDAKCodedEntries = CDAKCodedEntries(), severity: CDAKCodedEntries = CDAKCodedEntries())
+	public init(type:CDAKCodedEntries, reaction: CDAKEntryDetail? = nil, severity: CDAKEntryDetail? = nil)
 	public required init()
 CDAKConfidentialityCodes.swift
 	public enum CDAKConfidentialityCodes: String
@@ -138,6 +145,9 @@ CDAKConfidentialityCodes.swift
 	Normal = "N",
 	Restricted = "R",
 	VeryRestricted = "V"
+thing_with_identifier.swift
+	public protocol CDAKThingWithIdentifier: class
+	var cda_identifier: CDAKCDAIdentifier? { get set }
 record.swift
 	public struct code_and_name
 	required override public init() { // <== Need "required" because we need to call dynamicType() below
@@ -145,7 +155,9 @@ record.swift
 	override public var mustacheBox: MustacheBox
 	public convenience init(copyFrom record: CDAKRecord)
 medication.swift
+	public var mustacheBox: MustacheBox
 	public var jsonDict: [String: AnyObject]
+	public var mustacheBox: MustacheBox
 CDAKitHealthKitBridge.swift
 	case HKQuantityTypeIdentifierBodyMassIndex
 	case HKQuantityTypeIdentifierBodyFatPercentage

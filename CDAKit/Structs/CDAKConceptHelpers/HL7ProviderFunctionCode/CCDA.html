@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CCDA Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../../js/jquery.min.js" defer></script>
+    <script src="../../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/CCDA" class="dashAnchor"></a>
+    <a title="CCDA Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../../index.html">CDAKit Docs</a> (81% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../../index.html">CDAKit Reference</a>
+        <img id="carat" src="../../../img/carat.png" />
+        CCDA Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKAddress.html">CDAKAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKAllergy.html">CDAKAllergy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKCDAIdentifier.html">CDAKCDAIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKCareGoal.html">CDAKCareGoal</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKCodeSystemHelper.html">CDAKCodeSystemHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKCodedResultValue.html">CDAKCodedResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKCommunication.html">CDAKCommunication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKCondition.html">CDAKCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKEncounter.html">CDAKEncounter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKEntry.html">CDAKEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKEntryDetail.html">CDAKEntryDetail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKExport.html">CDAKExport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKFacility.html">CDAKFacility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKFamilyHistory.html">CDAKFamilyHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKFulfillmentHistory.html">CDAKFulfillmentHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKFunctionalStatus.html">CDAKFunctionalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKGlobals.html">CDAKGlobals</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKGuarantor.html">CDAKGuarantor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKHKRecord.html">CDAKHKRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKHL7Helper.html">CDAKHL7Helper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKHealthKitBridge.html">CDAKHealthKitBridge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKImmunization.html">CDAKImmunization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKInsuranceProvider.html">CDAKInsuranceProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKLabResult.html">CDAKLabResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKMedicalEquipment.html">CDAKMedicalEquipment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKMedication.html">CDAKMedication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKOrderInformation.html">CDAKOrderInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKOrganization.html">CDAKOrganization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKPerson.html">CDAKPerson</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKPhysicalQuantityResultValue.html">CDAKPhysicalQuantityResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKProcedure.html">CDAKProcedure</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKProvider.html">CDAKProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKProviderPerformance.html">CDAKProviderPerformance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes.html#/s:C6CDAKit22CDAKProviderPreference">CDAKProviderPreference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKQRDAAuthor.html">CDAKQRDAAuthor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKQRDACustodian.html">CDAKQRDACustodian</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKQRDADevice.html">CDAKQRDADevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKQRDAHeader.html">CDAKQRDAHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKQRDALegalAuthenticator.html">CDAKQRDALegalAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKReason.html">CDAKReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKRecord.html">CDAKRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKReference.html">CDAKReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKResultValue.html">CDAKResultValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes.html#/s:C6CDAKit17CDAKSocialHistory">CDAKSocialHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKSupport.html">CDAKSupport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKTelecom.html">CDAKTelecom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKTransfer.html">CDAKTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKTreatingProvider.html">CDAKTreatingProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Classes/CDAKVitalSign.html">CDAKVitalSign</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../../Enums/CDAKConfidentialityCodes.html">CDAKConfidentialityCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Enums/CDAKHKMetadataKeys.html">CDAKHKMetadataKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Enums/CDAKImportError.html">CDAKImportError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../../Functions.html#/s:ZF6CDAKitoi2eeFTCS_17CDAKCDAIdentifierS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Functions.html#/s:ZF6CDAKitoi2eeFTCS_16CDAKOrganizationS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Functions.html#/s:ZF6CDAKitoi2eeFTCS_12CDAKProviderS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Functions.html#/s:ZF6CDAKitoi2eeFTCS_31CDAKPhysicalQuantityResultValueS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Functions.html#/s:ZF6CDAKitoi2eeFTVS_14CDAKCodedEntryS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Functions.html#/s:ZF6CDAKitoi2eeFTVS_16CDAKCodedEntriesS0__Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../../Protocols/CDAKJSONExportable.html">CDAKJSONExportable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Protocols/CDAKThingWithCodes.html">CDAKThingWithCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Protocols/CDAKThingWithIdentifier.html">CDAKThingWithIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Protocols/CDAKThingWithTimes.html">CDAKThingWithTimes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../../Structs/CDAKCodedEntries.html">CDAKCodedEntries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Structs/CDAKCodedEntry.html">CDAKCodedEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Structs/CDAKConceptHelpers.html">CDAKConceptHelpers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Structs/CDAKMedicationAdministrationTiming.html">CDAKMedicationAdministrationTiming</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Structs/CDAKMedicationRestriction.html">CDAKMedicationRestriction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Structs/CDAKValueAndUnit.html">CDAKValueAndUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Structs/CDAKVocabularyKeys.html">CDAKVocabularyKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../../Structs.html#/s:V6CDAKit13code_and_name">code_and_name</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CCDA</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CCDA</span></code></pre>
+
+                </div>
+              </div>
+            <p><a href='#c_cda_codes' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='c_cda_codes'>C-CDA codes:</h2></p>
+
+<p>Code System: <q>ParticipationFunction</q> <a href="http://www.hl7.org/documentcenter/public_temp_29B6E6E3-1C23-BA17-0C7B234C1C2C5A05/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/ParticipationFunction.html">2.16.840.1.113883.5.88</a></p>
+
+<p>Subset of list:</p>
+
+<ul>
+<li>ADMPHYS (admitting physician)</li>
+<li>ANEST (anesthesist)</li>
+<li>ANRS (anesthesia nurse)</li>
+<li>ATTPHYS (attending physician)</li>
+<li>DISPHYS (discharging physician)</li>
+<li>FASST (first assistant surgeon)</li>
+<li>MDWF (midwife)</li>
+<li>NASST (nurse assistant)</li>
+<li>PCP (primary care physician)</li>
+<li>PRISURG (primary surgeon)</li>
+<li>RNDPHYS (rounding physician)</li>
+<li>SASST (second assistant surgeon)</li>
+<li>SNRS (scrub nurse)</li>
+<li>TASST (third assistant)</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA18admittingPhysicianSS"></a>
+                    <a name="//apple_ref/swift/Variable/admittingPhysician" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA18admittingPhysicianSS">admittingPhysician</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>admitting physician</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">admittingPhysician</span> <span class="o">=</span> <span class="s">"ADMPHYS"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA11anesthesistSS"></a>
+                    <a name="//apple_ref/swift/Variable/anesthesist" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA11anesthesistSS">anesthesist</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>anesthesist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">anesthesist</span> <span class="o">=</span> <span class="s">"ANEST"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA15anesthesiaNurseSS"></a>
+                    <a name="//apple_ref/swift/Variable/anesthesiaNurse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA15anesthesiaNurseSS">anesthesiaNurse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>anesthesia nurse</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">anesthesiaNurse</span> <span class="o">=</span> <span class="s">"ANRS"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA18attendingPhysicianSS"></a>
+                    <a name="//apple_ref/swift/Variable/attendingPhysician" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA18attendingPhysicianSS">attendingPhysician</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>attending physician</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">attendingPhysician</span> <span class="o">=</span> <span class="s">"ATTPHYS"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA20dischargingPhysicianSS"></a>
+                    <a name="//apple_ref/swift/Variable/dischargingPhysician" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA20dischargingPhysicianSS">dischargingPhysician</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>discharging physician</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">dischargingPhysician</span> <span class="o">=</span> <span class="s">"DISPHYS"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA21firstAssistantSurgeonSS"></a>
+                    <a name="//apple_ref/swift/Variable/firstAssistantSurgeon" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA21firstAssistantSurgeonSS">firstAssistantSurgeon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>first assistant surgeon</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">firstAssistantSurgeon</span> <span class="o">=</span> <span class="s">"FASST"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA7midwifeSS"></a>
+                    <a name="//apple_ref/swift/Variable/midwife" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA7midwifeSS">midwife</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>midwife</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">midwife</span> <span class="o">=</span> <span class="s">"MDWF"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA14nurseAssistantSS"></a>
+                    <a name="//apple_ref/swift/Variable/nurseAssistant" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA14nurseAssistantSS">nurseAssistant</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>nurse assistant</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">nurseAssistant</span> <span class="o">=</span> <span class="s">"NASST"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA20primaryCarePhysicianSS"></a>
+                    <a name="//apple_ref/swift/Variable/primaryCarePhysician" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA20primaryCarePhysicianSS">primaryCarePhysician</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>primary care physician</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">primaryCarePhysician</span> <span class="o">=</span> <span class="s">"PCP"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA14primarySurgeonSS"></a>
+                    <a name="//apple_ref/swift/Variable/primarySurgeon" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA14primarySurgeonSS">primarySurgeon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>primary surgeon</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">primarySurgeon</span> <span class="o">=</span> <span class="s">"PRISURG"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA17roundingPhysicianSS"></a>
+                    <a name="//apple_ref/swift/Variable/roundingPhysician" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA17roundingPhysicianSS">roundingPhysician</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>rounding physician</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">roundingPhysician</span> <span class="o">=</span> <span class="s">"RNDPHYS"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA22secondAssistantSurgeonSS"></a>
+                    <a name="//apple_ref/swift/Variable/secondAssistantSurgeon" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA22secondAssistantSurgeonSS">secondAssistantSurgeon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>second assistant surgeon</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">secondAssistantSurgeon</span> <span class="o">=</span> <span class="s">"SASST"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA10scrubNurseSS"></a>
+                    <a name="//apple_ref/swift/Variable/scrubNurse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA10scrubNurseSS">scrubNurse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>scrub nurse</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">scrubNurse</span> <span class="o">=</span> <span class="s">"SNRS"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA14thirdAssistantSS"></a>
+                    <a name="//apple_ref/swift/Variable/thirdAssistant" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvVVV6CDAKit18CDAKConceptHelpers23HL7ProviderFunctionCode4CCDA14thirdAssistantSS">thirdAssistant</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>third assistant</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">thirdAssistant</span> <span class="o">=</span> <span class="s">"TASST"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/ewhitley/CDAKit" target="_blank" rel="external">Eric Whitley</a>. All rights reserved. (Last updated: 2016-03-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
